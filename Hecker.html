@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is a custom designed terminal just to make user afraid of getting hacked"
+    />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 500px;
+        height: 250px;
+        border: 0.1px solid whitesmoke;
+        border-radius: 0.2cm;
+        position: relative;
+        left: 12cm;
+        font-size: 18px;
+        color: green;
+        text-align: center;
+        top: 6.5cm;
+        z-index: 1;
+      }
+      .div_ {
+        margin-bottom: 0.5cm;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="div_"></div>
+      <div class="div_"></div>
+      <div class="div_"></div>
+      <div class="div_"></div>
+      <div class="div_"></div>
+    </div>
+
+    <script>
+      (function () {
+        let main_body = document.body;
+
+        function Displayer(Num, text) {
+          let selec_tor = document
+            .querySelector(".box")
+            .querySelectorAll(".div_");
+          let each_space = selec_tor[Num];
+          each_space.innerHTML = text;
+          let intervalId = setInterval(() => {
+            each_space.innerHTML += ".";
+            if (each_space.innerHTML.endsWith(".......")) {
+              clearInterval(intervalId);
+            }
+          }, 50);
+          return each_space;
+        }
+
+        function Dot_processor(each_space) {
+          while (each_space.innerHTML.endsWith(".......")) {
+            each_space.innerHTML = each_space.innerHTML.slice(
+              0,
+              each_space.innerHTML.length - 7
+            );
+          }
+          each_space.innerHTML += ".";
+        }
+
+        setTimeout(() => {
+          document.body.style.backgroundColor = "black";
+          var elements = document.getElementsByClassName("box");
+          for (var i = 0; i < elements.length; i++) {
+            elements[i].style.borderColor = "green";
+          }
+        }, 2000);
+
+        setTimeout(() => {
+          let display0 = Displayer(0, "Initializing HACKING");
+          Dot_processor(display0);
+        }, 3500);
+
+        setTimeout(() => {
+          let display1 = Displayer(1, "Reading all your files");
+          Dot_processor(display1);
+        }, 4500);
+
+        setTimeout(() => {
+          let display2 = Displayer(2, "Detecting Passwords of your files");
+          let display3 = Displayer(
+            3,
+            "Sending all Password and Personal files to server"
+          );
+          Dot_processor(display2);
+          Dot_processor(display3);
+        }, 5500);
+
+        setTimeout(() => {
+          let display4 = Displayer(4, "Cleaning up your device storage");
+          Dot_processor(display4);
+        }, 6500);
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,259 @@
+*{
+    font-family:'Times New Roman', Times, serif;
+    color: rgb(63, 63, 63);
+}
+.Flex{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+/* This scrollbar design is same as the one in my buisnessPortfolio website...  */
+/* Target the entire scrollbar */
+::-webkit-scrollbar {
+    width: 12px; /* Change the width of the scrollbar */
+    height: 12px; /* Change the height for horizontal scrollbar */
+}
+
+/* Target the scrollbar track (background) */
+::-webkit-scrollbar-track {
+    background-color: rgb(219, 219, 219); /* Change the background color of the track */
+    opacity: 0.1;
+}
+
+/* Target the scrollbar thumb (handle) */
+::-webkit-scrollbar-thumb {
+    background-color: #a3a3a3; /* Change the color of the thumb */
+    filter: brightness(100%);  
+    border-radius: 10cm; /* Optional: Add rounded corners to the thumb */
+    border: 2px solid  #a3a3a3; /* Optional: Add a border around the thumb to create padding effect */
+    z-index: 100;
+    color: #c5c5c5;
+}
+
+/* Change the thumb color on hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #989898; /* Change the thumb color on hover */
+    border:1px solid  #989898 ;
+}
+.Carousel{
+    margin-top:-0.6cm ;
+}
+.Carousel img{
+    position: relative;
+    left:2.2cm;
+    bottom:-0.67cm;
+    border-radius: 0.1cm;
+}
+.Second img{
+    position: relative;
+    bottom: 9.7cm;
+
+}
+.Second{
+    width: 10px;
+    height: 10px;
+
+}
+.Carousel button{
+    border: 0.1px solid rgb(255, 255, 255);
+    width: 20px;
+    height: auto;
+
+}
+.Carousel button img{
+    width: 35px ;
+    height: auto;
+    z-index: 4;
+    filter: invert(1);
+    padding: 0.1cm;
+    position: relative;
+    bottom: 5.5cm;
+    border-radius: 2cm;
+}
+.active{
+    z-index: 3;
+}
+.Carousel button img:hover{
+    cursor:pointer;
+    opacity: 0.8;
+}
+#previous img{
+    display: none;
+}
+#next img{
+    position: relative;
+    left: 34.9cm;
+}
+.Text_1{
+    position: relative;
+    left: 3cm;
+}
+.Text_1 div{
+    padding-top: 0.3cm;
+    font-size: 16px;
+    color: #626262;
+}
+.Courses ul{
+    margin-top: 1cm;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 2cm;
+    color: rgb(166, 166, 166);
+    font-weight:800;
+}
+.Courses ul li:hover{
+    cursor: pointer;
+    color: #1b1b1b;
+    text-decoration: underline;
+    text-decoration-color: #1b1b1b;
+}
+
+hr{
+    width: 93vw;
+    margin-left: 2.3cm;
+}
+.color{
+    background-color: #c5c5c5;
+}
+.Header h3{
+    color: black;
+}
+.Header div{
+    color: rgb(47, 47, 47);
+}
+.Header ul{
+    width: 100vw;
+    height:15vh;
+    overflow-x: hidden;
+    gap: 0.5cm;
+}
+.Header li{
+    margin-top: 1cm;
+    position: relative;
+    left: 2.9cm;
+    text-align: center;
+    justify-content: center;
+    padding: 0.1cm 0.8cm;
+    background-color: #c5c5c5;
+    border: 1px solid  #c5c5c5;
+    border-radius: 1cm;
+}
+.Header li:hover{
+    cursor:pointer;
+    box-shadow: 1px 1px 5px 5px rgb(215, 215, 215) ;
+
+}
+.Card{
+    height: 60vh;
+    margin-right: 0.5cm;
+    width: 23vw;
+    position: relative;
+    left: 2.9cm;
+    top: 1cm;
+    border-radius: 0.2cm;
+    box-shadow: 2px 2px 5px 5px rgb(215, 215, 215) ;
+    border:0.1px solid rgb(183, 183, 183);
+}
+.Card img{
+    border-radius: 0.2cm;
+}
+.Card h4{
+    color: black;
+    text-align: center;
+    font-weight: 780;
+    justify-content: center;
+}
+.Card h5{
+    color:#626262;
+    font-size: 16px;
+    font-weight: 550;
+    margin-top: 0.3cm;
+    margin-left:0.7cm ;
+}
+.Card span{
+    color:#000000;
+    font-size: 16px;
+    font-weight: 700; 
+    position: relative;
+    left: 0.35cm;
+    top: 0.2cm;
+}
+.Card > span{
+    height:40px;
+    width: 40px;
+    padding-bottom: 0.5cm;
+}
+.rating{
+    width: 50px;
+    height: 50px;
+    border-radius: 2cm;
+    position: relative;
+    margin-left: 1cm;
+    bottom:0.15cm;
+}
+.Cost{
+    color:#000000;
+    font-size: 16px;
+    font-weight: 700; 
+    width: 20vw;
+    position: relative;
+    left: 0.6cm;
+    top: 0.2cm;
+}
+.BestSeller{
+    position: relative;
+    top: 1cm;
+    left: 0.6cm;
+    width: 100px;
+    color: #404040;
+    height: 30px;
+    border-radius: 0.1cm;
+    text-align: center;
+    font-weight: 650;
+    padding: 0.1cm 0.1cm;
+    background-color:rgb(222, 230, 111) ;
+    border: 1px solid rgb(222, 230, 111);
+
+}
+.Card:hover{
+    cursor: pointer;
+}
+#CourseArrow{
+    position: relative;
+    bottom: 4.5cm;
+    left: 6.1cm;
+    width:40px ;
+    z-index: 5;
+    height:40px ;
+    box-shadow:1px 1px 5px 5px rgb(229, 229, 229) ;
+    filter: invert(1);
+    border-radius: 2cm;
+}
+#Box{
+    width: 400px;
+    border-radius: 0.1cm;
+    color: black;
+    text-align: center;
+    justify-content: center;
+    padding-top: 0.3cm;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    box-shadow: 1px 1px 5px 5px rgb(193, 193, 193) ;
+    font-weight: 666;
+    background-color: azure;
+    height: 40px;
+    position: relative;
+    top: 2cm;
+    left: 3cm;
+    border: 0.1px solid black;
+}
+#Box:hover{
+    cursor:pointer;
+    text-decoration: underline;
+}
+.First{
+    color: black;
+    text-decoration: underline;
+}

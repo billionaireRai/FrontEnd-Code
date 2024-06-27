@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+    scroll-behavior:smooth;
+}
+.Flex{
+    display: flex;
+    flex-direction: row;
+}
+button:hover{
+    cursor: pointer;
+}
+nav li:hover{
+    cursor: pointer;
+    color: rgb(114, 114, 255);
+}
+nav ul{
+    list-style-type: none;
+    gap: 0.5cm;
+    font-size: 15px;
+}
+nav{
+    z-index: 2; 
+    height:30px;
+    border-radius: 1px solid white;
+    border-radius: 0.1cm;
+    padding: 0.55cm 0.6cm;
+    box-shadow: 1px 1px 5px 5px rgb(234, 234, 234);
+}
+.Logo{
+    position: relative;
+    bottom: 6px;
+    width: 91px;
+    height: 34px;
+}
+.Search_1 input{
+    border-radius: 1cm;
+    padding: 0.4cm 4.8cm;
+    position: relative;
+    border-width: 0.1px;
+    right: 0.5cm;
+    bottom: 0.3cm;
+    background-color: rgb(247, 255, 255);
+}
+
+.Search_1 img{
+    width: 25px;
+    height: auto;
+    border: 1px solid white;
+    border-radius: 2cm;
+    background-color:rgb(247, 255, 255) ;
+}
+.Search_1 button{
+    z-index: 2;
+    height: auto;
+    position: relative;
+    border:1px solid rgb(247, 255, 255);
+    left: 0.6cm;
+    bottom: 0.09cm;
+    background-color: rgb(247, 255, 255);
+    border-radius: 2cm;
+
+}
+/* By targeting the texts of input in these 2 conditions we need to apply jvascript.. */
+/* input::selection{
+    color: grey;
+}
+input:focus {
+    background-color: rgb(247, 255, 255);
+} */
+
+.Log_in{
+    position: relative;
+    bottom: 6px;
+    font-size: 15px;
+    border-width: 0.1px;
+    font-weight: 700;
+    padding: 0.25cm 0.5cm;
+}
+.Log_in:hover{
+    background-color:rgb(222, 222, 222) ;
+    border-color:rgb(222, 222, 222) ;
+}
+
+.Sign_up{
+    position: relative;
+    bottom: 6px;
+    right: 0.3cm;
+    filter: invert(1);
+    font-size: 15px;
+    font-weight: 700;
+    border: 0.1px thin black;
+    padding: 0.25cm 0.5cm;
+}
+#Globe img{
+    height: 23px;
+    width: 23px;
+}
+#Globe{
+    position: relative;
+    top: 2px;
+    border: 0.1px;
+    border-color: black;
+}
+#Cart{
+    height:30px;
+    width: 30px;
+}
+#Cart:hover{
+    width: 30px;
+    height: 40px;
+    transition: all ease-in-out 1s;
+}

@@ -1,0 +1,333 @@
+:root{
+    --first_color:rgb(0, 0, 0);
+    --second_color:#1f2022;
+    --third_color:rgb(168, 157, 157);
+    --fourth_color:white;
+    --fifth_color:rgb(144, 137, 137);
+    --sixth_color:rgb(20, 20, 20);
+    --seventh_color:rgb(236, 230, 230);
+    --eight_color:rgb(29, 26, 26);
+    --cursor_style:pointer;
+
+}
+
+*{
+    background-color:var(--first_color) ;
+    margin: 0px;
+    padding: 4px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.Left_TopBox{
+    width: 22.5vw ;
+    height: 20vh ;
+    background-color: var(--sixth_color);
+    border-radius: 0.2cm;
+    position: absolute;
+}
+
+.Logo{
+    position: relative;
+    left: 17px ;
+    top: 12px ;
+    background-color: var(--sixth_color);
+    cursor:var(--cursor_style);
+}
+
+.Left_TopBox > div{
+    background-color: var(--sixth_color);
+    color: var(--fourth_color);
+
+}
+
+.Left_TopBox > div:hover{
+    text-decoration: underline;
+}
+.first sup{
+    background-color: var(--sixth_color);
+    size-adjust: 0.5cm;
+}
+.second{
+    display: flex;
+    flex-direction: row;
+    cursor:var(--cursor_style);
+    padding-bottom: 0.4cm;
+}
+
+.second svg{
+    position: relative;
+    background-color: var(--sixth_color);
+    height: 25px ;
+    width: 25px;
+    left: 17px ;
+    top: 14.5px ;
+}
+.second div{
+    position:relative;
+    color: var(--fourth_color);
+    background-color: var(--sixth_color);
+    font-weight: 650;
+    left: 25px ;
+    top: 18px ;
+    text-align: center;
+    justify-content: center;
+}
+.Third{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    top: 15px;
+    background-color: var(--sixth_color);
+}
+.Third:hover{
+    fill: var(--fourth_color);
+    cursor: var(--cursor_style);
+}
+.Third > div{
+    position: relative;
+    left:0.6cm;
+    font-weight: 650;
+    font-size: 16px;
+    color: var(--third_color);
+    background-color: var(--sixth_color);
+}
+.Third svg{
+    height: 0.7cm;
+    position: relative;
+    left:15px;
+    background-color: var(--sixth_color);
+    fill: var(--third_color);
+}
+.Left_BottomBox{
+    border: 1px solid var(--sixth_color);
+    position: relative;
+    margin-top: 0.1cm;
+    top: 4.3cm;
+    height:65vh;
+    width: 22.5vw;
+    border-radius: 0.2cm;
+    background-color: var(--sixth_color);
+}
+.Library svg{
+    fill: var(--fifth_color);
+    position: relative;
+    left: 11.5px;
+    top: 5px;
+    background-color: var(--sixth_color);
+    height:23.5px ;
+    width:23px ;
+}
+.Library div{
+    color: var(--fifth_color);
+    background-color: var(--sixth_color);
+    display: inline;
+    font-weight: 650;
+    position: relative;
+    left:0.4cm;
+    top:-0.1cm ;
+}
+.Add{
+    color: var(--fifth_color);
+    background-color: var(--sixth_color);
+    border:1px solid var(--sixth_color);
+    font-size: 28px;
+    position: relative;
+    left:3.5cm;
+    top:0.1cm;
+}
+.Add:hover{
+    cursor: var(--cursor_style);
+    color: var(--fourth_color);
+    border-radius:0.7cm;
+    background-color: var(--sixth_color);
+}
+.CreatePlaylist{
+    color: var(--fourth_color);
+    background-color: var(--second_color);
+    margin-top:0.3cm;
+    margin-left:0.05cm;
+    width:21.5vw ;
+    height:17vh ;
+    border-radius: 0.3cm;
+}
+.CreatePlaylist h4{
+    background-color: var(--second_color);
+    margin-left: 0.3cm;
+    margin-top: 0.3cm;
+}
+.CreatePlaylist div{
+    background-color: var(--second_color);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    margin-left: 0.3cm;
+}
+.CPL{
+    background-color: var(--fourth_color);
+    color: var(--first_color);
+    border:1px solid var(--fourth_color);
+    padding: 0.2cm 0.5cm;
+    border-radius: 0.5cm;
+    font-weight: 650;
+    margin-left: 0.5cm;
+    margin-top: 0.3cm;
+}
+.CPL:hover{
+    cursor:var(--cursor_style);
+    background-color: var(--seventh_color);
+}
+ul li{
+    background-color: var(--sixth_color);
+}
+ul{
+    list-style-type: none;
+    font-size: 10px;
+    margin-top: 0.5cm;
+    background-color: var(--sixth_color);
+    color:var(--third_color);
+}
+.lang{
+    color: var(--fourth_color);
+    font-weight: 650;
+    background-color: var(--sixth_color);
+    border:1px solid var(--third_color);
+    border-radius: 1cm;
+    padding:0.1cm 0.3cm;
+    margin-top: 0.5cm;
+    margin-left: 0.5cm;
+}
+ul li:hover{
+    cursor: var(--cursor_style);
+}
+ul li:last-child:hover{
+    cursor: var(--cursor_style);
+    text-decoration: underline;
+    text-decoration-color: var(--third_color);
+}
+.lang svg{
+    background-color: var(--sixth_color);
+    width:17px ;
+    height: 17px;
+    position: relative;
+    top:0.16cm;
+}
+.lang:hover{
+    border-color: var(--fourth_color);
+    cursor: var(--cursor_style);
+}
+footer h5 , p{
+    background-color: rgb(230, 63, 230);
+    margin-left:0.25cm;
+    margin-top: 0.1cm;
+}
+footer{
+    position: relative;
+    top: -12.99cm;
+    width: 97.4vw;
+    height:7.5vh;
+    color: var(--fourth_color);
+    background-color: rgb(230, 63, 230);
+}
+.Free{
+    color: var(--first_color);
+    padding:0.4cm 0.8cm;
+    border: 1px solid var(--fourth_color);
+    background-color: var(--fourth_color);
+    border-radius: 1cm;
+    font-weight: 600;
+    font-size: 15px;
+    position: relative;
+    left:34cm ;
+    bottom:1.2cm ;
+}
+.Free:hover{
+    cursor: var(--cursor_style);
+    font-weight: 700;
+}
+.RightBox{
+    position: relative;
+    left: 9.4cm;
+    bottom: 13.2cm;
+    width:73.9vw;
+    overflow-y:auto;
+    height:86.75vh ;
+    border-radius: 0.2cm;
+    background-color: var(--sixth_color);
+}
+nav{
+    position: relative;
+    display:flex;
+    flex-direction: row;
+    right: 0.1cm;
+    bottom:0.11cm;
+    width:73.5vw ;
+    height:7vh;
+    border-radius: 0.2cm;
+    background-color: var(--second_color);
+}
+nav svg{
+    fill:var(--third_color);
+    height: 0.4cm;
+    background-color: var(--eight_color);
+}
+nav button{
+    background-color: var(--eight_color);
+    border:1px solid var(--second_color);
+    border-radius: 5cm;
+    padding: 0cm 0.3cm;
+    margin-left: 0.2cm;
+}
+span button{
+    position: relative;
+    left: 20cm;
+    font-size: 16px;
+    font-weight: 550;
+}
+.SignUp :hover{
+    cursor:var(--cursor_style);
+    color: var(--fourth_color);
+    font-weight: 700;
+}
+.LogIn :hover{
+    cursor: var(--cursor_style);
+    font-weight: 700;
+}
+ h2{
+    color:var(--fourth_color);
+    background-color:var(--sixth_color);
+}
+section{
+    width:auto;
+    height:5cm;
+    overflow-y:auto;
+    scrollbar-base-color: var(--sixth_color);
+}
+.card{
+    background-color: var(--sixth_color);
+    margin-left: 0.1cm;
+    border-radius: 0.1cm;
+    width:4.5cm ;
+    height:5.5cm ;
+    color: var(--seventh_color);
+    font-weight: 490;
+    
+}
+.card img{
+    width:3.5cm;
+    height:3.5cm;
+    border-radius: 2cm; 
+    margin-left: 0.35cm;
+    background-color: var(--sixth_color);
+}
+
+.card:hover{
+    background-color:var(--second_color);
+    cursor: var(--cursor_style);
+    transition:all 0.9s ease;
+}
+.card div{
+    background-color: var(--sixth_color);
+    border-radius: 0.5cm;
+}
+.card div:hover{
+    background-color: var(--second_color);
+}

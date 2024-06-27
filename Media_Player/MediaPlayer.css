@@ -1,0 +1,276 @@
+:root{
+    --first_color:rgb(0, 0, 0);
+    --second_color:#1f2022;
+    --third_color:rgb(168, 157, 157);
+    --fourth_color:white;
+    --fifth_color:rgb(144, 137, 137);
+    --sixth_color:rgb(20, 20, 20);
+    --seventh_color:rgb(236, 230, 230);
+    --eight_color:rgb(29, 26, 26);
+    --ninth_color:blue;
+    --cursor_style:pointer;
+
+}
+*{
+    background-color:var(--first_color) ;
+    margin: 0px;
+    padding: 4px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.Left_TopBox{
+    width: 22.5vw ;
+    height: 20vh ;
+    background-color: var(--sixth_color);
+    border-radius: 0.2cm;
+    position: absolute;
+}
+
+.Logo{
+    position: relative;
+    left: 17px ;
+    top: 12px ;
+    background-color: var(--sixth_color);
+    cursor:var(--cursor_style);
+}
+
+.Left_TopBox > div{
+    background-color: var(--sixth_color);
+    color: var(--fourth_color);
+
+}
+
+.Left_TopBox > div:hover{
+    text-decoration: underline;
+}
+.first sup{
+    background-color: var(--sixth_color);
+    size-adjust: 0.5cm;
+}
+.second{
+    display: flex;
+    flex-direction: row;
+    cursor:var(--cursor_style);
+    padding-bottom: 0.4cm;
+}
+
+.second svg{
+    position: relative;
+    background-color: var(--sixth_color);
+    height: 25px ;
+    width: 25px;
+    left: 17px ;
+    top: 14.5px ;
+}
+.second div{
+    position:relative;
+    color: var(--fourth_color);
+    background-color: var(--sixth_color);
+    font-weight: 650;
+    left: 25px ;
+    top: 18px ;
+    text-align: center;
+    justify-content: center;
+}
+.Third{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    top: 15px;
+    background-color: var(--sixth_color);
+}
+.Third:hover{
+    fill: var(--fourth_color);
+    cursor: var(--cursor_style);
+}
+.Third > div{
+    position: relative;
+    left:0.6cm;
+    font-weight: 650;
+    font-size: 16px;
+    color: var(--third_color);
+    background-color: var(--sixth_color);
+}
+.Third svg{
+    height: 0.7cm;
+    position: relative;
+    left:15px;
+    background-color: var(--sixth_color);
+    fill: var(--third_color);
+}
+
+.Playlist{
+    width: 22.5vw;
+    height: 65vh;
+    border: 1px solid var(--sixth_color);
+    background-color: var(--sixth_color);
+}
+
+.Left_BottomBox{
+    border: 1px solid var(--sixth_color);
+    position: relative;
+    margin-top: 0.2cm;
+    top: 4.3cm;
+    height:75vh;
+    width: 22.5vw;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.2cm;
+    background-color: var(--sixth_color);
+}
+.Left_BottomBox div{
+    color: var(--fourth_color);
+    display: inline;
+    margin-left:20px;
+    background-color: var(--sixth_color);
+    font-size: 20px;
+    font-weight:640;
+}
+#Text{
+    position: relative;
+    bottom:0.68cm;
+    left: 0.15cm;
+}
+svg:hover{
+    cursor:var(--cursor_style);
+}
+.Left_BottomBox svg{
+    position: relative;
+    top:5px;
+    background-color: var(--sixth_color);
+    width: 20px;
+    height: auto;
+}
+.RightBox{
+    position: relative;
+    bottom: 77.5vh;
+    left: 23.7vw;
+    height: 97.8vh ;
+    width: 74vw;
+    background-color: var(--sixth_color);
+    border-radius: 0.2cm;
+
+}
+#Wallpaper{
+    background-color: var(--sixth_color);
+    opacity: 0.85;
+    position: relative;
+    bottom:10px;
+    right:5px;
+    width:74vw;
+    height:85vh;
+}
+.Greeting{
+    color:var(--sixth_color);
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: -15cm;
+
+}
+.Greeting:hover{
+    cursor: var(--cursor_style);
+    color: var(--fourth_color);
+    transition: all 1s ease-out;
+}
+.ControlPanel{
+    border-radius: 0.2cm;
+    position: relative;
+    right: 3.3px;
+    bottom:25px;
+    width:73.8vw ;
+    height:13.8vh ;
+}
+.Controls button{
+    margin-right:0.1cm;
+    position:relative;
+    left: 12cm;
+    bottom: 0.15cm;
+    background-color: var(--first_color);
+    height:38px;
+    width: auto;
+    border-radius:5cm;
+}
+.Controls{
+    height:1cm;
+}
+button img{
+    background-color: var(--fourth_color);
+    height:20px;
+    width: auto;
+    border-radius: 5cm;
+    padding:5px;
+}
+.ProgressBar{
+    position: relative;
+    bottom:0.3cm;
+    width:72vw ;
+    height:0px;
+    border-radius: 0.2cm;
+    background-color: var(--fourth_color);
+}
+.Locator{
+    background-color: var(--ninth_color);
+    height: 3px ;
+    width: 3px;
+    position: relative;
+    bottom: 5.5px;
+    right:4.3px;
+    border-radius: 1cm;
+}
+.Locator:hover{
+    width: 7px;
+    height:7px;
+    margin-bottom:10px;
+    transition: all 0.3s ease;
+}
+.Marking:hover{
+    z-index: 1; 
+    cursor: var(--cursor_style);
+}
+#SongInfo{
+    position: relative;
+    top: 0.2cm;
+    left:2px;
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--fourth_color);
+    font-size: 15px;
+    font-weight: 500;
+}
+#TimeStamp{
+    color: var(--fourth_color);
+    position: relative;
+    bottom: 0.6cm;
+    left:26.3cm;
+    font-size: 15px;
+}
+.Songs{
+    text-align: center;
+    align-content: center;
+    overflow:hidden;
+    color:var(--fourth_color);
+    border:0.1px solid var(--fourth_color);
+    position: relative;
+    right:0.35cm;
+    height: 1cm;
+    border-radius: 0.1cm;
+    margin-bottom:0.1cm;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.Songs:hover{
+    cursor: var(--cursor_style);
+    font-size: 15px;
+
+}
+#volume{
+    background-color: var(--first_color);
+    font-weight: 900;
+    position: relative;
+    left: 22cm;
+    bottom: 1cm;
+}
+#volume input{
+    position: relative;
+    top: 5.5px;
+}
+
