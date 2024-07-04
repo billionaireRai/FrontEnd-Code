@@ -402,20 +402,39 @@
 // EXERCISE - javascript interview problem...
 
 // We have array students , we need to return only names of the students...
-let students = [
-    {name:"Piyush" , rollNumber: 31 , marks: 80},
-    {name:"Jenny" , rollNumber: 15 , marks: 69},
-    {name:"Kaushal" , rollNumber: 16 , marks: 35},
-    {name:"Dilpreet" , rollNumber: 7 , marks: 55}
-] 
+// let students = [
+//     {name:"Piyush" , rollNumber: 31 , marks: 80},
+//     {name:"Jenny" , rollNumber: 15 , marks: 69},
+//     {name:"Kaushal" , rollNumber: 16 , marks: 35},
+//     {name:"Dilpreet" , rollNumber: 7 , marks: 55}
+// ] 
 
-let Names = [];
-for (const StuD of students) {
-    let element = StuD.name.toUpperCase() ;
-    Names.push(element);
-}
+// let Names = [];
+// for (const StuD of students) {
+//     let element = StuD.name.toUpperCase() ;
+//     Names.push(element);
+// }
 
-console.log(Names);
+// console.log(Names);
 
 // I solved It successfully in my first attempt...
 
+// EXERCISE- LETS ADD KHATA NUMBER BY PROGRAMMING
+
+// let value_obj = {
+//     cost_1 : 177 ,
+//     cost_2 : 126 ,
+//     cost_3 : 141 ,
+//     cost_4 : 136 ,
+//     cost_5 : 160 ,
+//     cost_6 : 192 ,
+//     cost_7 : 143 ,
+//     cost_8 : 107 ,
+//     cost_9 : 10  ,
+//     cost_10 : 95 ,
+//     cost_11 : 212 ,
+//     cost_12 : 107
+// }
+
+// const values = Object.values(value_obj).reduce((a,b) => a + b ) ;
+// console.log(values) ;
