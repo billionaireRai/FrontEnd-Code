@@ -127,29 +127,62 @@ in Javascript encodeURIComponent() on that variable ...
 // run();
 
 // DAY-4 (Integration Part - 3 : MULTI CONVERSATION (CHATTING) BASED ON AI)
-const {GoogleGenerativeAI} =  require('@google/generative-ai') ;
-// Set your API here...
+// const {GoogleGenerativeAI} =  require('@google/generative-ai') ;
+// // Set your API here...
 
-const genAI = new GoogleGenerativeAI(Proccess.env.API_KEY) ;
+// const genAI = new GoogleGenerativeAI(Proccess.env.API_KEY) ;
 
-async function run() {
-    const model = genAI.getGenerativeModel({model:'gemini-1.5-flash'}) ;
-    const chat = model.startChat({
-        history:[{
-            role:'user',
-        Parts:[{
-            text:'Hellow , I have 2 Dogs in my house'
-        }]    
+// async function run() {
+//     const model = genAI.getGenerativeModel({model:'gemini-1.5-flash'}) ;
+//     const chat = model.startChat({
+//         history:[{
+//             role:'user',
+//         Parts:[{
+//             text:'Hellow , I have 2 Dogs in my house'
+//         }]    
+//         }
+//     ],
+//     generationConfig:{maxOutputTokens:100} ,
+// });
+
+// const msg = 'How many paws are there in my house ?';
+// const result = await chat.SendMessage(msg) ;
+// const text = response.text() ;
+// console.log(text) ;
+    
+// }
+
+// run();
+
+// DAY-5 (Integration Part - 3 : STREAMING IN TEXT + IMAGE CATEGORY OF (AI) INTEGRATION)...
+const {GoogleGenerativeAI} = require('@google/generative-ai') ;
+
+API_KEY ='PUT_YOUR_API_kEY_HERE';
+const genAI = new GoogleGenerativeAI(proccess.env.API_KEY)
+
+// // Converts localfiles information to GoogleGenerativeAI Parts object...
+function filestoGenerativePart(Path,mimetype) {
+    return {
+        inlineData:{
+            data:Buffer.from(fs.readFileSync(Path).toString("base64") , mimetype )
+            // mimetype means relative path...
         }
-    ],
-    generationConfig:{maxOutputTokens:100} ,
-});
+    }    
+}
+async function run() {
+    const model = genAI.getGenerativeModel({model:'gemini-1.5-flash'})
+    const prompt = "Enter_your_prompt_here" ;
+    const imagesParts = [filestoGenerativePart('image1.png','image/png'),filestoGenerativePart('image2.png','image/jpeg'),] ;
+    const result = await model.generateContentStream([prompt , ...imagesParts]) ;
+    const text = response.text() ;
 
-const msg = 'How many paws are there in my house ?';
-const result = await chat.SendMessage(msg) ;
-const text = response.text() ;
-console.log(text) ;
+    for await (const chunk of result.Stream){
+        const chunkText = chunk.text() ;
+        console.log(chunkText) ;
+        text += chunkText ;
+    }
     
 }
 
-run();
+run() ;
+
