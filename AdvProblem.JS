@@ -402,12 +402,12 @@
 // EXERCISE - javascript interview problem...
 
 // We have array students , we need to return only names of the students...
-// let students = [
-//     {name:"Piyush" , rollNumber: 31 , marks: 80},
-//     {name:"Jenny" , rollNumber: 15 , marks: 69},
-//     {name:"Kaushal" , rollNumber: 16 , marks: 35},
-//     {name:"Dilpreet" , rollNumber: 7 , marks: 55}
-// ] 
+let students = [
+    {name:"Piyush" , rollNumber: 31 , marks: 80},
+    {name:"Jenny" , rollNumber: 15 , marks: 69},
+    {name:"Kaushal" , rollNumber: 16 , marks: 35},
+    {name:"Dilpreet" , rollNumber: 7 , marks: 55}
+] 
 
 // let Names = [];
 // for (const StuD of students) {
