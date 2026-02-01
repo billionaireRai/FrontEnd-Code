@@ -155,34 +155,45 @@ in Javascript encodeURIComponent() on that variable ...
 // run();
 
 // DAY-5 (Integration Part - 3 : STREAMING IN TEXT + IMAGE CATEGORY OF (AI) INTEGRATION)...
-const {GoogleGenerativeAI} = require('@google/generative-ai') ;
+// const {GoogleGenerativeAI} = require('@google/generative-ai') ;
 
-API_KEY ='PUT_YOUR_API_kEY_HERE';
-const genAI = new GoogleGenerativeAI(proccess.env.API_KEY)
+// API_KEY ='PUT_YOUR_API_kEY_HERE';
+// const genAI = new GoogleGenerativeAI(proccess.env.API_KEY)
 
-// // Converts localfiles information to GoogleGenerativeAI Parts object...
-function filestoGenerativePart(Path,mimetype) {
-    return {
-        inlineData:{
-            data:Buffer.from(fs.readFileSync(Path).toString("base64") , mimetype )
-            // mimetype means relative path...
-        }
-    }    
-}
-async function run() {
-    const model = genAI.getGenerativeModel({model:'gemini-1.5-flash'})
-    const prompt = "Enter_your_prompt_here" ;
-    const imagesParts = [filestoGenerativePart('image1.png','image/png'),filestoGenerativePart('image2.png','image/jpeg'),] ;
-    const result = await model.generateContentStream([prompt , ...imagesParts]) ;
-    const text = response.text() ;
+// // // Converts localfiles information to GoogleGenerativeAI Parts object...
+// function filestoGenerativePart(Path,mimetype) {
+//     return {
+//         inlineData:{
+//             data:Buffer.from(fs.readFileSync(Path).toString("base64") , mimetype )
+//             // mimetype means relative path...
+//         }
+//     }    
+// }
+// async function run() {
+//     const model = genAI.getGenerativeModel({model:'gemini-1.5-flash'})
+//     const prompt = "Enter_your_prompt_here" ;
+//     const imagesParts = [filestoGenerativePart('image1.png','image/png'),filestoGenerativePart('image2.png','image/jpeg'),] ;
+//     const result = await model.generateContentStream([prompt , ...imagesParts]) ;
+//     const text = response.text() ;
 
-    for await (const chunk of result.Stream){
-        const chunkText = chunk.text() ;
-        console.log(chunkText) ;
-        text += chunkText ;
-    }
+//     for await (const chunk of result.Stream){
+//         const chunkText = chunk.text() ;
+//         console.log(chunkText) ;
+//         text += chunkText ;
+//     }
     
-}
+// }
+// run() ;
 
-run() ;
-
+// Understanding javascript dates...
+const current_date = new Date();
+console.log(current_date) ;
+// console.log(current_date.toString());   // Sun Oct 06 2024 11:10:44 GMT+0530 (India Standard Time)
+// console.log(current_date.toISOString());   // 2024-10-06T05:41:32.681Z
+// console.log(current_date.toLocaleString());   // 10/6/2024, 11:12:28 AM
+// console.log(current_date.toLocaleDateString());   // 10/6/2024
+// console.log(current_date.toLocaleTimeString());   // 11:14:56 AM
+// console.log(current_date.toTimeString());   // 11:16:13 GMT+0530 (India Standard Time)
+// console.log(current_date.toUTCString());   // Sun, 06 Oct 2024 05:46:47 GMT
+// console.log(current_date.toJSON());   // 2024-10-06T05:47:56.570Z
+// console.log(current_date.valueOf());   // returns milliseconds as 1728193796375

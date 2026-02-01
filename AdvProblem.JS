@@ -402,12 +402,12 @@
 // EXERCISE - javascript interview problem...
 
 // We have array students , we need to return only names of the students...
-let students = [
-    {name:"Piyush" , rollNumber: 31 , marks: 80},
-    {name:"Jenny" , rollNumber: 15 , marks: 69},
-    {name:"Kaushal" , rollNumber: 16 , marks: 35},
-    {name:"Dilpreet" , rollNumber: 7 , marks: 55}
-] 
+// let students = [
+//     {name:"Piyush" , rollNumber: 31 , marks: 80},
+//     {name:"Jenny" , rollNumber: 15 , marks: 69},
+//     {name:"Kaushal" , rollNumber: 16 , marks: 35},
+//     {name:"Dilpreet" , rollNumber: 7 , marks: 55}
+// ] 
 
 // let Names = [];
 // for (const StuD of students) {
@@ -438,3 +438,22 @@ let students = [
 
 // const values = Object.values(value_obj).reduce((a,b) => a + b ) ;
 // console.log(values) ;
+
+// let Pricerange = '$50 - $100' ;
+// let PriceArr = Pricerange.split("-");
+//       let lowerlimit = parseInt(PriceArr[0].substring(1)); // Parsing lower limit after removing '$'
+//       let upperlimit = parseInt(PriceArr[1].substring(1)); // Parsing upper limit after removing '$'
+//       if (Array.isArray(PriceArr)) {
+//           const CostFiltered = PriceArr.filter(card => {
+//               let cardPrice = parseInt(card.price.substring(1)); // Parsing card price after removing '$'
+//               return cardPrice >= lowerlimit && cardPrice <= upperlimit;
+//           });
+          
+//           state.HomeCards.data = CostFiltered;
+//       }
+
+// A general question...
+
+// const arr = [1,2,3,4,5,56] ;
+// console.log(arr) ;   [1,2,3,4,5,56]
+// console.log(...arr);  1 2 3 4 5 56

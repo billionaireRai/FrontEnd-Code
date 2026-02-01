@@ -41,9 +41,7 @@
         let main_body = document.body;
 
         function Displayer(Num, text) {
-          let selec_tor = document
-            .querySelector(".box")
-            .querySelectorAll(".div_");
+          let selec_tor = document.querySelector(".box").querySelectorAll(".div_");
           let each_space = selec_tor[Num];
           each_space.innerHTML = text;
           let intervalId = setInterval(() => {

@@ -509,3 +509,21 @@
 
 // let simp_interest = info.reduce((a,b) => a * b , 1)/100 ;
 // console.log(simp_interest);
+
+// Question
+// const targetnumber = 8 ;
+// const NumArr = [3,4,6,7,3,6,7,5,7,9,5,7,4,4,3,5,3] ;
+// for (let i = 0; i < NumArr.length; i++) {
+//     for (let j = 0; j < NumArr.length; j++) {
+//         let element_1 = NumArr[i] ;
+//         let element_2 = NumArr[j] ;
+//         if ((element_1 + element_2) === targetnumber) {
+//             console.log(i,j) ;
+//         }
+//     }
+    
+// }
+
+
+let str = "HellowGuys" ;
+console.log(str.split('G'));
