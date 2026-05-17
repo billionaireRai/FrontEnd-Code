@@ -77,20 +77,19 @@ in Javascript encodeURIComponent() on that variable ...
 // // creating an Package instance...
 // const genAI = new GoogleGenerativeAI(Proccess.env.API_KEy) ;
 
-// async function run() {
+// async function askPrompt(prompt:string) {
 //     // defining the (AI) model for usage...
 //     const model = genAI.getGenerativeModel({model:"gemini-1.5-flash"});
-//     const Prompt = "Any_Prompt_You_Want" ;
     
 //     // passing Prompt for generating content...
-//     const result = await model.generateContent(Prompt) ;
+//     const result = await model.generateContent(prompt) ;
 //     const response = await result.response ; 
 //     const text = response.text() ; 
 //     console.log(text) ;
     
 // }
 
-// run();
+// askPrompt();
 
 
 // DAY-4 (Integration Part - 2 : TEXT & IMAGE CONVERSION)
